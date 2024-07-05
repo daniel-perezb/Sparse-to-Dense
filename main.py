@@ -93,7 +93,7 @@ for i in range(math.floor(dense_descriptors.shape[0] / num_points)):
         output = model(new_features)
     # If value over .5 add to the inliers
 
-    indies = np.where(output[:, 1] > 0.70)
+    indies = np.where(output[:, 1] > 0.75)
     points = np.vstack((points, dense_points[np.squeeze(min_index[indies]), :]))
     # Delete them from the dense points
     dense_points = np.delete(dense_points, min_index, axis=0)
