@@ -1,0 +1,5 @@
+# Files to ignore
+*.asv
+
+# Folder to ignore
+*.idea
